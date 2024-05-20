@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<body>
+
+<h1>Edit Article</h1>
+
+<form action="/<%= writen._id %>?_method=PUT" method="POST">
+    <div>
+    <label for="title">Title</label>
+    <input required value="<%= writen.title %>" type="text" name="title" id="title" class="cal">
+    </div>
+
+    <div>
+    <label for="description" class="dde">Description</label>
+    <textarea name="description" id="description" class="description"><%= writen.description %></textarea>
+    </div>
+
+    <div>
+    <label for="markdown">Markdown</label>
+    <textarea name="markdown" id="markdown" class="markdown1"><%= writen.markdown %></textarea>
+    </div>
+
+    <a href="/all" class="coo1">返回</a>
+    <button type="submit" class="coo2">保存</button>
+</form>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+    background-color:orange;
+}
+label[for="title"]{
+    margin-left: 116px;
+}
+h1{
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+	margin-bottom: 6px;
+    margin-left: 30px;
+}
+.cancel{
+    margin-left: 90px;
+}
+.description {  
+        width: 700px;  
+        height: 500px;
+        padding: 10px;
+        border: 1px solid ;  
+        border-radius: 10px;
+        font-size: 20px; 
+        margin-top: 20px;
+        margin-left: 150px;
+    } 
+.dde{
+    position: absolute;
+    top:140px;
+    left:50px;
+}
+.cal{
+    width: 200px;  
+    height: 40px;
+}
+.coo1{
+    margin-left: 150px;
+}
+label[for="markdown"]{
+    margin-left: 64px;
+}
+.markdown1{
+    width: 800px;  
+    height: 200px;
+     padding: 10px;
+    border: 1px solid ;  
+    border-radius: 10px;
+    font-size: 20px;
+}
+</style>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="new.css" />
+</head>
+<body>
+
+<h1>New Article</h1>
+
+<form action="/new" method="POST">
+    <div>
+    <label for="title">Title</label>
+    <input required type="text" name="title" id="title" class="cal">
+    </div>
+
+    <div>
+    <label for="description" class="dde">Description</label>
+    <textarea name="description" id="description" class="description"></textarea>
+    </div>
+
+    <div class="mark1">
+    <label for="markdown">Markdown</label>
+    <textarea required name="markdown" id="markdown" class="mark2"></textarea>
+    </div>
+
+    <a href="/all" class="cancel">返回</a>
+    <button type="submit">保存</button>
+</form>
+
+</body>
+</html>

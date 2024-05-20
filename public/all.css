@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+h1{
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+	margin-bottom: 6px;
+    margin-left: 30px;
+    border-radius: 5px;
+}
+body{
+    background-image: url('BJ.png');
+    background-attachment: fixed; 
+}
+.content{
+	width: 100%;
+    text-align: left;
+    margin-top: 30px;
+    padding: 20px; 
+    margin-bottom: 50px; 
+    font-size:20px;
+}
+p{
+    margin-left: 0px;
+}
+.content h1:hover,
+.content p:hover {
+    color: red; 
+    cursor: pointer;
+}
+.mom{
+    margin-left:30px
+}
+.mb-4{
+   font-size:80px;
+   color:purple;
+}
+.hh1{
+    color:blue;
+}
+.hh2{
+    color:blue;
+}

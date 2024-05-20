@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="all.css" />
+  <title>Blog</title>
+</head>
+<body>
+    <h1 class="mb-4">Blog</h1>
+        <a href="/new" class="mom">New Article</a>
+        <hr />
+    <div class="content">
+     <% writens.forEach(writen => { %>
+        <h1>Title</h1>
+        <p><%= writen.title %></p>
+        <h1>Description</h1>
+        <p><%= writen.description %></p>
+        <h1>Markdown</h1>
+        <p><%= writen.markdown %></p>
+        <h3 class="hh1">Time</h3>
+        <p class="hh2"><%= writen.time %></p>
+        <a href="/edit/<%= writen._id %>">编辑</a>
+        <form action="/<%= writen._id %>?_method=DELETE" method="POST">
+            <button type="submit" >删除</button>
+        </form>
+        <hr />
+     <% }) %>
+    </div>
+</body>
+</html>

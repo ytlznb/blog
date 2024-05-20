@@ -1,0 +1,52 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background:url(BJ.png) no-repeat 0px 0px;
+}
+label[for="title"]{
+    margin-left: 116px;
+}
+h1{
+    width: 100%;
+    text-align: left;
+    margin-top: 30px;
+	margin-bottom: 6px;
+    margin-left: 30px;
+}
+.cancel{
+    margin-left: 90px;
+}
+.description {  
+        width: 700px;  
+        height: 500px;
+        padding: 10px;
+        border: 1px solid ;  
+        border-radius: 10px;
+        font-size: 20px; 
+        margin-top: 20px;
+        margin-left: 150px;
+    } 
+.dde{
+    position: absolute;
+    top:140px;
+    left:57px;
+}
+.cal{
+    width: 200px;  
+    height: 40px;
+}
+.mark1{
+    position: absolute;
+    top:65px;
+    left:400px;
+}
+.mark2{
+    width: 700px;
+    border: 1px solid ;  
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px;
+    
+}
